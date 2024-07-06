@@ -11,7 +11,9 @@ body {
     line-height: 1.6;
     background-color: #f0f0f0;
     padding: 20px;
-    height: 2000px
+    display: flex;
+    flex-direction: column;
+    min-height: 300vh;
 }
 
 /* Header styles */
@@ -35,6 +37,7 @@ main {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* これでmainが伸縮可能になります */
 }
 
 section {
@@ -88,4 +91,5 @@ footer {
     padding: 10px 0;
     background-color: #333;
     color: #fff;
+    position: relative;
 }
